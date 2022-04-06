@@ -47,7 +47,6 @@ def formatter(root_path, manifest_file, **kwargs):
         audio_file = os.path.join(os.path.join(root_path, "wavs/"), line)
         items.append({"text":lower_text, "audio_file":audio_file, "speaker_name":speaker_name})
       
-      print(items)
       return items
 
 output_path = os.path.dirname('/model/')
@@ -88,7 +87,7 @@ config = GlowTTSConfig(
     num_eval_loader_workers=2,
     run_eval=True,
     test_delay_epochs=-1,
-    epochs=30,
+    epochs=3,
     text_cleaner="phoneme_cleaners",
     use_phonemes=True,
     phoneme_language="en-us",
