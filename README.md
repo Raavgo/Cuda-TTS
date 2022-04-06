@@ -16,3 +16,6 @@ In order to train the model at a decent speed GPU support needs to be enabled. T
 3. Run setup.sh with root privileges
 
 ## How to train the model
+1. Change the parameter in train.py
+2. Run docker-compose build
+3. Run docker-compose up or docker-compose up -d
