@@ -1,0 +1,7 @@
+version: '2.2'
+services:
+  ml_cuda:
+    build: .
+    runtime: nvidia
+    volumes:
+    - '.:/speech'
