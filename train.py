@@ -60,7 +60,7 @@ output_path = os.path.dirname('/model/')
 path = '/data/'
 
 dataset_config = BaseDatasetConfig(
-    name="dataset", meta_file_train='metadata_mls.json', path=path, ignored_speakers=None)
+    name="dataset", meta_file_train='../input/metadata-mls/metadata_mls.json', path=path, ignored_speakers=None)
 
 audio_config = BaseAudioConfig(
     sample_rate=22050,
