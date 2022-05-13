@@ -81,7 +81,7 @@ audio_config = BaseAudioConfig(
 )
 
 config = GlowTTSConfig(
-    batch_size=32,
+    batch_size=30,
     eval_batch_size=16,
     num_loader_workers=2,
     num_eval_loader_workers=2,
@@ -94,7 +94,7 @@ config = GlowTTSConfig(
     phoneme_cache_path=os.path.join(output_path, "phoneme_cache"),
     print_step=25,
     print_eval=False,
-    mixed_precision=True,
+    mixed_precision=False,
     output_path=output_path,
     datasets=[dataset_config],
     audio=audio_config,
