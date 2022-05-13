@@ -44,7 +44,7 @@ def formatter(root_path, manifest_file, **kwargs):
         #tokenizer = TweetTokenizer()
         #tokenized_text = tokenizer.tokenize(lower_text)
 
-        audio_file = os.path.join(os.path.join(root_path, "wavs/"), line)
+        audio_file = os.path.join(os.path.join("./en_US/by_book/female/judy_bieber/dorothy_and_wizard_oz/", "wavs/"), line)
         items.append({"text":lower_text, "audio_file":audio_file, "speaker_name":speaker_name})
       
       return items
